@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technische Dokumentation und Anleitung zum Elektronikprojekt.">
+  <title>Elektronikprojekt | Dokumentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">⚡</span>
+        <span>Elektronik<span class="brand-muted">Projekt</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <a href="index.html">Übersicht</a>
+        <a class="active" href="dokumentation.html">Dokumentation</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero section-dark">
+      <div class="container narrow">
+        <div class="eyebrow">DOKUMENTATION / ANLEITUNG</div>
+        <h1>Aufbau, Inbetriebnahme<br>und <span class="gradient-text">Fehlersuche.</span></h1>
+        <p>
+          Diese Seite ist als technische Schritt-für-Schritt-Dokumentation gedacht.
+          Ergänze sie mit deinen konkreten Bauteilen, Anschlussplänen, Messwerten
+          und Firmware-Versionen.
+        </p>
+
+        <div class="counter-box counter-box-dark" aria-label="Platzhalter für Besucherzähler">
+          <span class="counter-label">BESUCHER</span>
+          <!-- HIER DEN EINBETTUNGSCODE VON BESUCHERZAEHLER-KOSTENLOS.DE EINFÜGEN -->
+          <div class="counter-placeholder">Besucherzähler von besucherzaehler-kostenlos.de</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container doc-layout">
+        <aside class="doc-sidebar">
+          <div class="toc-title">INHALT</div>
+          <a href="#material">01 Material</a>
+          <a href="#aufbau">02 Aufbau</a>
+          <a href="#verkabelung">03 Verkabelung</a>
+          <a href="#firmware">04 Firmware</a>
+          <a href="#test">05 Inbetriebnahme</a>
+          <a href="#fehler">06 Fehlersuche</a>
+        </aside>
+
+        <article class="doc-content">
+          <section id="material" class="doc-section">
+            <div class="doc-number">01</div>
+            <div>
+              <h2>Material & Werkzeuge</h2>
+              <p>Beispielhafte Liste – durch die Komponenten deines Projekts ersetzen.</p>
+              <div class="check-list">
+                <div><span>✓</span> Mikrocontroller / Entwicklungsboard</div>
+                <div><span>✓</span> Netzteil / Spannungsversorgung</div>
+                <div><span>✓</span> Sensoren und/oder Bedienelemente</div>
+                <div><span>✓</span> Leiterplatte / Lochrasterplatine</div>
+                <div><span>✓</span> Kabel, Stecker und Befestigungsmaterial</div>
+                <div><span>✓</span> Multimeter und geeignete Werkzeuge</div>
+              </div>
+            </div>
+          </section>
+
+          <section id="aufbau" class="doc-section">
+            <div class="doc-number">02</div>
+            <div>
+              <h2>Mechanischer Aufbau</h2>
+              <p>
+                Beschreibe hier, wie die Baugruppen angeordnet und befestigt werden.
+                Nutze Bilder aus dem Ordner <code>images/</code>, um einzelne Schritte zu zeigen.
+              </p>
+              <figure class="doc-image">
+                <img src="images/aufbau-2.jpg" alt="Detailansicht des mechanischen Aufbaus"
+                     onerror="this.src='images/placeholder.svg';">
+                <figcaption>Detailansicht – hier deine eigene Aufnahme einsetzen.</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section id="verkabelung" class="doc-section">
+            <div class="doc-number">03</div>
+            <div>
+              <h2>Verkabelung</h2>
+              <p>
+                Führe die Verdrahtung systematisch durch. Dokumentiere Pinbelegung,
+                Versorgungsspannungen und Besonderheiten der Signalführung.
+              </p>
+              <div class="wiring-box">
+                <div class="wiring-row"><span>VCC</span><strong>+</strong><span>Versorgung</span></div>
+                <div class="wiring-row"><span>GND</span><strong>−</strong><span>Masse</span></div>
+                <div class="wiring-row"><span>SDA</span><strong>→</strong><span>I²C Daten</span></div>
+                <div class="wiring-row"><span>SCL</span><strong>→</strong><span>I²C Takt</span></div>
+              </div>
+            </div>
+          </section>
+
+          <section id="firmware" class="doc-section">
+            <div class="doc-number">04</div>
+            <div>
+              <h2>Firmware / Software</h2>
+              <p>
+                Ergänze hier die verwendete Entwicklungsumgebung, Bibliotheken und
+                die wichtigsten Funktionen deiner Software.
+              </p>
+              <pre><code>// Beispiel
+void setup() {
+  Serial.begin(115200);
+  // Hardware initialisieren
+}
+
+void loop() {
+  // Sensoren auslesen
+  // Logik ausführen
+  // Ausgänge aktualisieren
+}</code></pre>
+            </div>
+          </section>
+
+          <section id="test" class="doc-section">
+            <div class="doc-number">05</div>
+            <div>
+              <h2>Inbetriebnahme & Test</h2>
+              <ol class="steps">
+                <li><strong>Spannungsversorgung prüfen.</strong> Vor dem Einschalten alle Leitungen kontrollieren.</li>
+                <li><strong>Controller starten.</strong> Seriellen Monitor bzw. Statusanzeige beobachten.</li>
+                <li><strong>Eingänge testen.</strong> Sensoren und Taster einzeln prüfen.</li>
+                <li><strong>Ausgänge testen.</strong> Aktoren schrittweise zuschalten.</li>
+              </ol>
+            </div>
+          </section>
+
+          <section id="fehler" class="doc-section">
+            <div class="doc-number">06</div>
+            <div>
+              <h2>Fehlersuche</h2>
+              <div class="troubleshooting">
+                <div>
+                  <strong>System startet nicht</strong>
+                  <p>Versorgungsspannung, Polarität, Masseverbindung und Sicherungen prüfen.</p>
+                </div>
+                <div>
+                  <strong>Sensor liefert keine Werte</strong>
+                  <p>Adresse, Pinbelegung, Pull-ups und Software-Konfiguration kontrollieren.</p>
+                </div>
+                <div>
+                  <strong>Ausgang schaltet nicht</strong>
+                  <p>Treiberstufe, Logikpegel und Lastbedingungen überprüfen.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <span>© 2026 Elektronikprojekt</span>
+      <div>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="index.html">Startseite</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

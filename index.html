@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dokumentation und Projektübersicht eines Elektronikprojekts.">
+  <title>Elektronikprojekt | Übersicht</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">⚡</span>
+        <span>Elektronik<span class="brand-muted">Projekt</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <a class="active" href="index.html">Übersicht</a>
+        <a href="dokumentation.html">Dokumentation</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">ELEKTRONIK · ENTWICKLUNG · OPEN DOCUMENTATION</div>
+          <h1>Vom Schaltplan<br><span class="gradient-text">zum funktionierenden System.</span></h1>
+          <p class="hero-text">
+            Diese Seite zeigt den Aufbau, die technischen Eckdaten und die wichtigsten
+            Entwicklungsschritte meines Elektronikprojekts – übersichtlich dokumentiert
+            und für Nachbau und Weiterentwicklung vorbereitet.
+          </p>
+
+          <div class="button-row">
+            <a class="btn btn-primary" href="dokumentation.html">Zur Dokumentation <span>→</span></a>
+            <a class="btn btn-secondary" href="#projekt">Projekt ansehen</a>
+          </div>
+
+          <div class="counter-box" aria-label="Platzhalter für Besucherzähler">
+            <span class="counter-label">BESUCHER</span>
+            <!--
+              HIER DEN EINBETTUNGSCODE VON BESUCHERZAEHLER-KOSTENLOS.DE EINFÜGEN.
+              Beispiel:
+              <div class="visitor-counter">...</div>
+            -->
+            <div class="counter-placeholder">Besucherzähler von besucherzaehler-kostenlos.de</div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="image-frame glow">
+            <img src="images/projekt-hero.jpg" alt="Hauptansicht des Elektronikprojekts"
+                 onerror="this.src='images/placeholder.svg';">
+          </div>
+          <div class="floating-card floating-card-top">
+            <span class="status-dot"></span>
+            <div>
+              <strong>PROJEKTSTATUS</strong>
+              <small>Aktive Entwicklung</small>
+            </div>
+          </div>
+          <div class="floating-card floating-card-bottom">
+            <span class="mono">v1.0</span>
+            <span>Dokumentiert</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projekt" class="section section-dark">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">01 / PROJEKTÜBERBLICK</div>
+            <h2>Ein kompaktes System mit klarer Struktur.</h2>
+          </div>
+          <p>
+            Die folgenden Bereiche kannst du mit deinen eigenen Projektdaten, Messwerten,
+            Fotos und technischen Entscheidungen füllen.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-number">12 V</span>
+            <span class="stat-label">Versorgungsspannung</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-number">4 A</span>
+            <span class="stat-label">Max. Ausgangsstrom</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Hauptmodule</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-number">v1.0</span>
+            <span class="stat-label">Dokumentationsstand</span>
+          </article>
+        </div>
+
+        <div class="content-grid">
+          <article class="glass-card">
+            <div class="card-icon">◫</div>
+            <h3>Was macht das Projekt?</h3>
+            <p>
+              Ersetze diesen Text durch eine kurze Beschreibung deines Systems:
+              Welche Aufgabe löst es, für wen ist es gedacht und was ist der besondere
+              technische Ansatz?
+            </p>
+          </article>
+
+          <article class="glass-card">
+            <div class="card-icon">⌁</div>
+            <h3>Systemaufbau</h3>
+            <p>
+              Beschreibe hier Sensoren, Mikrocontroller, Versorgung, Aktoren,
+              Kommunikation und die wichtigsten Schnittstellen.
+            </p>
+          </article>
+
+          <article class="glass-card">
+            <div class="card-icon">✓</div>
+            <h3>Projektziel</h3>
+            <p>
+              Formuliere das gewünschte Ergebnis und nenne Kriterien, anhand derer
+              du später Funktion und Qualität des Aufbaus überprüfen kannst.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">02 / TECHNIK</div>
+            <h2>Technische Eckdaten auf einen Blick.</h2>
+          </div>
+        </div>
+
+        <div class="spec-layout">
+          <div class="spec-panel">
+            <div class="spec-row">
+              <span>Controller</span><strong>ESP32 / Arduino / eigener Wert</strong>
+            </div>
+            <div class="spec-row">
+              <span>Eingänge</span><strong>Sensoren / Taster / ADC</strong>
+            </div>
+            <div class="spec-row">
+              <span>Ausgänge</span><strong>Relais / MOSFET / LEDs</strong>
+            </div>
+            <div class="spec-row">
+              <span>Kommunikation</span><strong>WLAN / I²C / UART</strong>
+            </div>
+            <div class="spec-row">
+              <span>Versorgung</span><strong>12 V DC</strong>
+            </div>
+          </div>
+
+          <div class="progress-panel">
+            <div class="progress-title">
+              <span>Entwicklungsfortschritt</span>
+              <strong>78%</strong>
+            </div>
+            <div class="progress-bar"><span style="width: 78%"></span></div>
+
+            <div class="progress-item">
+              <div><span>Schaltung</span><strong>90%</strong></div>
+              <div class="mini-bar"><span style="width: 90%"></span></div>
+            </div>
+            <div class="progress-item">
+              <div><span>Firmware</span><strong>75%</strong></div>
+              <div class="mini-bar"><span style="width: 75%"></span></div>
+            </div>
+            <div class="progress-item">
+              <div><span>Gehäuse</span><strong>60%</strong></div>
+              <div class="mini-bar"><span style="width: 60%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">03 / GALERIE</div>
+            <h2>Vom einzelnen Bauteil bis zum fertigen Aufbau.</h2>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-main image-card">
+            <img src="images/aufbau-1.jpg" alt="Aufbau des Elektronikprojekts"
+                 onerror="this.src='images/placeholder.svg';">
+            <figcaption>01 — Erster Aufbau / Prototyp</figcaption>
+          </figure>
+
+          <figure class="image-card">
+            <img src="images/platine.jpg" alt="Platine und Bauteile"
+                 onerror="this.src='images/placeholder.svg';">
+            <figcaption>02 — Platine</figcaption>
+          </figure>
+
+          <figure class="image-card">
+            <img src="images/gehaeuse.jpg" alt="Gehäuse des Projekts"
+                 onerror="this.src='images/placeholder.svg';">
+            <figcaption>03 — Gehäuse</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta">
+        <div>
+          <div class="eyebrow">04 / WEITERLESEN</div>
+          <h2>Schritt für Schritt nachvollziehbar.</h2>
+          <p>In der Dokumentation findest du Aufbau, Verdrahtung, Firmware und typische Fehlerquellen.</p>
+        </div>
+        <a class="btn btn-primary" href="dokumentation.html">Dokumentation öffnen →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <span>© 2026 Elektronikprojekt</span>
+      <div>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
