@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dbe4ea"/>
+      <stop offset="1" stop-color="#b7c6d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <g fill="none" stroke="#6c7d8a" stroke-width="3" opacity=".7">
+    <rect x="310" y="240" width="580" height="320" rx="28"/>
+    <circle cx="455" cy="400" r="48"/>
+    <circle cx="745" cy="400" r="48"/>
+    <path d="M455 352v-55h140v-57M745 352v-55H605"/>
+    <path d="M455 448v55h140v57M745 448v55H605"/>
+  </g>
+  <text x="600" y="690" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="34" fill="#52626d">Eigenes Projektbild hier einsetzen</text>
+</svg>
